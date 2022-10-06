@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+</body>
+
+<!-- Form -->
+<h1>Add books</h1>
+<div class="row">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="Title" type="text" class="validate">
+                <label for="Title">Title</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="Author" type="text" class="validate">
+                <label for="Author">Author</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="ISBN" type="text" class="validate">
+                <label for="ISBN">ISBN#</label>
+            </div>
+        </div>
+        <a class="waves-effect waves-light btn">Submit</a>
+    </form>
+</div>
+
+<!-- Table -->
+<table>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>Title</td>
+        <td>Author</td>
+        <td>ISBN</td>
+        <td><a href="#">Remove</a></td>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>Author</td>
+        <td>ISBN</td>
+        <td><a href="#">Remove</a></td>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>Author</td>
+        <td>ISBN</td>
+        <td><a href="#">Remove</a></td>
+    </tr>
+    </tbody>
+</table>
+
+<body>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
