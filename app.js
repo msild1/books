@@ -1,9 +1,11 @@
-const addBookButton = document.querySelector('#AddBook')
+const addBookButton = document.querySelector('#addBook')
 const title = document.querySelector('#Title')
 const isbn = document.querySelector('#ISBN')
 const author = document.querySelector('#Author')
+const bookList = document.querySelector('#books')
 
 addBookButton.addEventListener('click', addBook)
+bookList.addEventListener('click', removeBook)
 
 
 
@@ -37,4 +39,10 @@ function addBook(){
     ul.appendChild(tr)
 
 
+}
+function removeBook(e){
+    if(e.target.textContent == 'Remove'){
+            e.target.parentElement.parentElement.remove()
+            //deleteTaskLS(e.target.parentElement.textContent.slice(0,-1)
+    }
 }
